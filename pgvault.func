@@ -296,7 +296,8 @@ EOF
   tar \
     --warning=no-file-changed --ignore-failed-read --absolute-names --warning=no-file-removed \
     --exclude-from=/opt/pgvault/exclude.list \
-    -C /opt/appdata/${program_var} -cvf /opt/appdata/plexguide/${program_var}.tar ./
+    #-C /opt/appdata/${program_var} -cvf /opt/appdata/plexguide/${program_var}.tar ./
+    -C /opt/appdata/${program_var} -cvf ${tarlocation}/${program_var}.tar ./
 
   #tar \
   #--warning=no-file-changed --ignore-failed-read --absolute-names --warning=no-file-removed \
